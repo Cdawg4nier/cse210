@@ -1,0 +1,5 @@
+XP,589,5
+simple,Speaker,I want to plug in my speaker,10,True
+simple,Bring dishes downstairs,I want to bring my plate downstairs,19,True
+checklist,Clash,I need to attack 5 times in my clash of clans base,10,False,5,200,2
+eternal,Listen to freebird,I want to listen to freebird all the way through,10,False,10,9
