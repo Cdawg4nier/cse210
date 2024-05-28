@@ -5,8 +5,6 @@ public class Order
 {
     private List<Product> _products = new List<Product>();
     private Customer _customer;
-    private int _shippingCost;
-
     public Order(List<Product> products, Customer customer)
     {
         _products = products;
