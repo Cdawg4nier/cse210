@@ -2,23 +2,22 @@ public class Swimming : Activity
 {
     private int _laps;
 
+    public Swimming (string date, double duration, int laps) : base (date, duration, "Swimming")
+    {
+        _laps = laps;
+    }
     public override double GetDistance()
     {
-        throw new NotImplementedException();
+        return _laps*50/1000*.62;
     }
 
     public override double GetSpeed()
     {
-        throw new NotImplementedException();
+        return ( GetDistance() / GetDuration() ) * 60;
     }
 
     public override string GetPace()
     {
-        throw new NotImplementedException();
-    }
-
-    public override string Summary()
-    {
-        throw new NotImplementedException();
+        return $"{60/GetSpeed():F2}";
     }
 }

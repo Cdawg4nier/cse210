@@ -2,23 +2,22 @@ public class Cycling : Activity
 {
     private double _speed;
 
+    public Cycling (string date, double duration, double speed) : base(date, duration, "Cycling")
+    {
+        _speed = speed;
+    }
     public override double GetDistance()
     {
-        throw new NotImplementedException();
+        return _speed * GetDuration() / 60;
     }
 
     public override double GetSpeed()
     {
-        throw new NotImplementedException();
+        return _speed;
     }
 
     public override string GetPace()
     {
-        throw new NotImplementedException();
-    }
-
-    public override string Summary()
-    {
-        throw new NotImplementedException();
+        return $"{60 / _speed:F2}";
     }
 }
